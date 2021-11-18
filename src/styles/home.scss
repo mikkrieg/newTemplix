@@ -1,0 +1,39 @@
+
+
+.home-container {
+  padding-top: 17%;
+  text-align: center;
+
+  .btn-outline-dark:hover {
+    background-color: transparent !important;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 5em;
+  }
+  
+  .text-color {
+    color: #000;
+  }
+  
+  .text-color:hover {
+    color: #FFF;
+    border-color: #FFF
+  }
+  
+  .fade-in {
+    animation: fade 2s ease-in;
+    margin-top: 30%;
+  }
+
+  #fade-button {
+    animation: fade 2s ease-in;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}

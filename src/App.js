@@ -3,22 +3,25 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Layouts from './components/Layouts';
-// import { AppProvider } from './AppContext.js';
+import Container from 'react-bootstrap/Container';
+import './styles/background.scss';
 // import './sass/main.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    // <AppProvider>
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route exact path='/' element={<Home/>} />
-          <Route exact path='/layouts' element={<Layouts/>} />
-        </Routes>
-        <Footer/>
-      </Router>
-    // {/* </AppProvider> */}
+    <div className='background background--color-map'>
+      <Container>
+        <Router>
+          <Navbar/>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/layouts' component={Layouts} />
+          </Switch>
+          <Footer/>
+        </Router>
+      </Container>
+    </div>
   );
 }
 

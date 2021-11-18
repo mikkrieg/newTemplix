@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+![Templix Logo](./src/img/logo.png)
+## _Project: [Templix](https://templix.netlify.app/) Splash Templates_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### _A website that provides splash page templates that will eventually be able to be downloaded and implemented_
 
-## Available Scripts
+#### By _**Michael Kriegel**_
 
-In the project directory, you can run:
+## Technologies Used
 
-### `yarn start`
+* _React_
+* _React-Bootstrap_
+* _JSX_
+* _Visual Studio Code_
+* _SCSS_
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+_[Templix](https://templix.netlify.app/) is a website that provides splash page templates/themes for inspiration or download. Users will be able to view the template, get some information about what the template is built with, file size, instructions on necessary tools to use template, etc. Then users will be able to download the template and implement the template in their own projects. The templates on the website will be completely static, any customization will be done offline by users themselves. Since the download will just be the static template, users will recieve instructions on what technologies are required to be able to use the template. (Currently the download functionality does not execute properly)_
 
-### `yarn test`
+_To learn more about me, visit my portfolio site [mkriegel](https://mkriegel.me)_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup/Installation Requirements
 
-### `yarn build`
+### Online
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* _The project is deployed on Netlify_
+* _Visit and view [Templix](https://templix.netlify.app/) on Netlify_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Local Machine
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* _Clone or fork this repository_
+* _Open the project directory on your local machine_
+* _Run `npm install` from the terminal once you have navigated to the project directory_
+* _Run `npm start` from the terminal to view the project in the browser using your localhost_
 
-### `yarn eject`
+## Known Bugs
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* _The woodland template is responsive but looks weird when the window is resized to uncommon screen sizes_
+* _Download button downloads an empty zip_
+* _No authentication is implemented, sign up and login buttons don't work_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[MIT](https://opensource.org/licenses/MIT)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Copyright(c) 2021 Michael Kriegel
 
-## Learn More
+## Contact Information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Michael Kriegel: mikkrieg@gmail.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CSS Background Animation: Hugo Giraudel
