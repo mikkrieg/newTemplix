@@ -37,12 +37,12 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={function(e){closeMobileMenu(); returnScroll();}}>
-                Home
+                <p className='color-links'>Home</p>
               </Link>
             </li>
             <li className='nav-item by-btn'>
               <Link to='/layouts' className='nav-links' onClick={function(e){closeMobileMenu(); returnScroll();}}>
-                Layouts
+                <p className='color-links'>Layouts</p>
               </Link>
             </li>
           </ul>

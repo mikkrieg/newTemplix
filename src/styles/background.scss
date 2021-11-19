@@ -1,8 +1,7 @@
 .background {
-  height: 100vh;
+  height: 200vh;
   width:   100%;
   background-position: center;
-  position: fixed; 
   background-size: cover;
 }
 
@@ -57,5 +56,33 @@ $colormap: (
   }
   100% {
     background-color: map-reach($colormap, one);
+  }
+}
+
+@function map-reach($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+@keyframes colors-text {
+  0% {
+    color: map-reach($colormap, one); 
+  }
+  20% {
+    color: map-reach($colormap, two); 
+  }
+  40% {
+    color: map-reach($colormap, three);
+  }
+  60% {
+    color: map-reach($colormap, four);
+  }
+  80% {
+    color: map-reach($colormap, five);
+  }
+  100% {
+    color: map-reach($colormap, one);
   }
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.4",
+    "css-loader": "^6.5.1",
     "node-sass": "5.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",

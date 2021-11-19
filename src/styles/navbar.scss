@@ -51,8 +51,12 @@
   margin-left: 10%;
 }
 
+.color-links {
+  animation: colors-text 30s linear infinite;
+}
+
 .nav-links {
-  color: #FFF;
+  color: transparent;
   display: flex;
   font-size: 1.1em;
   align-items: center;
@@ -122,6 +126,8 @@
   .nav-links {
     text-align: center;
     padding: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
     width: 100%;
     display: table;
   }
