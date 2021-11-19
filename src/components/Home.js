@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { useHistory } from 'react-router-dom'
 import Row from 'react-bootstrap/Row';
@@ -8,12 +8,25 @@ import '../styles/home.scss';
 
 
 const Home = () => {
-
+  const [ onHome, setOnHome ] = useState(false);
   const history = useHistory();
 
   const handleClick = () => {
     history.push('./layouts');
   }
+
+  const onLoad = () => {
+    setOnHome(true);
+  }
+
+  useEffect(() => {
+    onLoad();
+  }, [])
+
+  if(onHome === true) {
+    document.body.classList.add('no-scroll');
+  }
+
   return (
     <Container className='home-container'>
     <Row>

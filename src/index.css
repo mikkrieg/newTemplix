@@ -13,6 +13,10 @@ html {
   overflow: auto;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
