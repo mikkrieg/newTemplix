@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div className='background background--color-map'>
-      <Container>
         <Router>
           <Navbar/>
           <Switch>
@@ -20,7 +19,6 @@ function App() {
           </Switch>
           <Footer/>
         </Router>
-      </Container>
     </div>
   );
 }

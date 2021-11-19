@@ -48,10 +48,11 @@
 
 .logo-icon {
   width: 100%;
+  margin-left: 10%;
 }
 
 .nav-links {
-  color: #fff;
+  color: #FFF;
   display: flex;
   font-size: 1.1em;
   align-items: center;
@@ -61,13 +62,13 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
-  color: #FFF;
+  border-bottom: 4px solid #000;
+  color: #000;
   transition: all 0.2s ease-out;
 }
 
-.fa-bars {
-  color: #fff;
+.fa-bars, .fa-times {
+  color: #000;
 }
 
 .nav-links-mobile {
@@ -101,16 +102,16 @@
     justify-content: start !important;
     flex-direction: column;
     width: 100%;
-    height: 99vh;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 85px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: rgba(0, 0, 0, 0.95);
     padding-left: 0;
     left: 0;
     opacity: 1;
@@ -126,9 +127,9 @@
   }
 
   .nav-links:hover {
-    background-color: #fff;
+    background-color: #FFF;
     color: #242424;
-    border-radius: 0;
+    border: none;
   }
 
   .menu-icon {
@@ -136,13 +137,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 50%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
 
   .fa-times {
-    color: #fff;
+    color: #000;
     font-size: 2rem;
   }
 
@@ -163,7 +164,7 @@
 
   .nav-links-mobile:hover {
     background: #fff;
-    color: #242424;
+    color: #FFF;
     transition: 250ms;
   }
 

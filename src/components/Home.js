@@ -26,7 +26,7 @@ const Home = () => {
         <Button 
           onClick={handleClick}
           id='fade-button' 
-          className='background--color-map mt-5 text-color' 
+          className='background--color-map mt-3 text-color' 
           variant='outline-dark' 
           size='lg'
         >
