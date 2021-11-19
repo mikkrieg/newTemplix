@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
@@ -8,7 +8,21 @@ import logo from '../img/logo.png'
 import layout1 from '../img/layout-1.png';
 
 
-export default function Layouts() {
+const Layouts = () => {
+  const [ onLayout, setOnLayout ] = useState(false);
+
+  const onLoad = () => {
+    setOnLayout(true);
+  }
+
+  useEffect(() => {
+    onLoad();
+  }, [])
+
+  if(onLayout === true) {
+    document.body.classList.remove('no-scroll')
+  }
+
   return(
     <Container className='layout-container'>
       <Row className='layout-info mt-5'>
@@ -44,3 +58,5 @@ export default function Layouts() {
     </Container>
   )
 }
+
+export default Layouts;

@@ -10,16 +10,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='background background--color-map'>
-        <Router>
-          <Navbar/>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/layouts' component={Layouts} />
-          </Switch>
-          <Footer/>
-        </Router>
-    </div>
+    <Router>
+      <Navbar/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/layouts' component={Layouts} />
+      </Switch>
+      <Footer/>
+    </Router>
   );
 }
 
