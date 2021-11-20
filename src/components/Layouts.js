@@ -35,8 +35,9 @@ const Layouts = () => {
   return(
     <Container className='layout-container' data-aos='fade-up'>
       <Row className='layout-info mt-3'>
-        <p className='layout-p'>When viewing a layout, select the <strong>?</strong> in the bottom right corner for instructions and specifications</p>
-        <p className='layout-p'>Downloads are currently only available on Desktop</p>
+        <p className='layout-p'>
+          When viewing a layout, select the <span className='mark'>?</span> in the bottom right corner for instructions and specifications
+        </p>
       </Row>
       <Row className='card-row'>
         <Col lg={4}>

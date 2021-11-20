@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -7,11 +7,18 @@ import Button from 'react-bootstrap/Button';
 
 // These imports can be removed on download
 import InfoModal from '../InfoModal.js';
+import { AppContext } from '../../AppContext';
 
 // props parameter can be removed on download 
 const Woodland = (props) => {
   // These state slices can be removed on download
   const [open, setOpen] = useState(false);
+  const { setOnProject } = useContext(AppContext);
+
+  useEffect(() => {
+    setOnProject(true);
+  }, [])
+
   const handleClick = () => {
     if(open !== false) {
       setOpen(false);

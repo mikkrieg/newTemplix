@@ -1,17 +1,18 @@
 .layout-p {
   margin-top: -20px;
+  font-size: 1.1em;
   text-align: center;
 }
 
 .layout-container {
   padding-top: 8%;
-  text-align: center;
+  // text-align: center;
 }
 
 .mark {
   font-weight: bolder;
   font-size: 1.1em;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .card-styles {
@@ -21,7 +22,7 @@
 }
 
 .card-text {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .card-title {
@@ -40,29 +41,6 @@
   padding: 0 5px 0 5px;
 }
 
-// #card-1 {
-//   animation: move 1s ease-in,  fade 3s ease-in;
-//   animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
-// }
-
-// #card-2 {
-//   animation: move 1.5s ease-in, fade 3s ease-in;
-//   animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
-// }
-
-// #card-3 {
-//   animation: move 2s ease-in, fade 3s ease-in;
-//   animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
-// }
-
-// @keyframes move {
-//   0%{margin-top: 135%}
-//   100%{margin-top: 0%}
-// }
-
-.layout-p {
-  font-size: 1.3em;
-}
 /* Modal Stylings */
 .modal-list {
   list-style-type: none;
@@ -99,18 +77,7 @@
   font-size: 1.7em;
 }
 
-@media only screen and (max-width: 1300px) {
-
-  .layout-p {
-    margin-top: 2% !important;
-    margin-bottom: 0;
-  }
-
-  .card-row {
-    margin-top: 2% !important;
-  }
-
-  .card-text {
-    font-size: 0.9em;
-  } 
+.card-row {
+  margin-top: 2% !important;
 }
+
