@@ -1,3 +1,116 @@
 .layout-p {
+  margin-top: -20px;
   text-align: center;
+}
+
+.layout-container {
+  padding-top: 8%;
+  text-align: center;
+}
+
+.mark {
+  font-weight: bolder;
+  font-size: 1.1em;
+  background-color: transparent;
+}
+
+.card-styles {
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.card-text {
+  font-size: 1.1em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-styles:hover {
+  transform: scale(1.02);
+}
+
+.layout-info {
+  animation: fade 1.5s ease-in;
+  margin-top: 20%;
+  font-weight: bold;
+  padding: 0 5px 0 5px;
+}
+
+// #card-1 {
+//   animation: move 1s ease-in,  fade 3s ease-in;
+//   animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
+// }
+
+// #card-2 {
+//   animation: move 1.5s ease-in, fade 3s ease-in;
+//   animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
+// }
+
+// #card-3 {
+//   animation: move 2s ease-in, fade 3s ease-in;
+//   animation-timing-function: cubic-bezier(.54,.35,.41,1.03);
+// }
+
+// @keyframes move {
+//   0%{margin-top: 135%}
+//   100%{margin-top: 0%}
+// }
+
+.layout-p {
+  font-size: 1.3em;
+}
+/* Modal Stylings */
+.modal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spec-li:before {
+  content: "-";
+}
+
+.modal-span {
+  font-weight: bolder;
+}
+
+.close-button {
+  justify-content: flex-end;
+}
+
+.dl-button {
+  justify-content: flex-start;
+}
+
+.modal-foot {
+  justify-content: space-between;
+}
+
+.sr-only {
+  display: none;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.7em;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .layout-p {
+    margin-top: 2% !important;
+    margin-bottom: 0;
+  }
+
+  .card-row {
+    margin-top: 2% !important;
+  }
+
+  .card-text {
+    font-size: 0.9em;
+  } 
 }

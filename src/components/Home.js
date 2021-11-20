@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { useHistory } from 'react-router-dom'
+import { AppContext } from '../AppContext';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
@@ -8,7 +9,7 @@ import '../styles/home.scss';
 
 
 const Home = () => {
-  const [ onHome, setOnHome ] = useState(false);
+  const { onHome, setOnHome } = useContext(AppContext);
   const history = useHistory();
 
   const handleClick = () => {

@@ -10,7 +10,11 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow: auto;
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
 }
 
 .no-scroll {
