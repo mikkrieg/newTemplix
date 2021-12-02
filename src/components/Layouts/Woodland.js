@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import styles from './../../styles/Layouts/woodland.module.css'
+import styles from './../../styles/Layouts/woodland.css'
 import Button from 'react-bootstrap/Button';
 
 // These imports can be removed on download

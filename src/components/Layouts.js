@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import {AppContext} from '../AppContext';
+import { useRouteMatch } from 'react-router';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Aos from 'aos';
 import Row from 'react-bootstrap/Row';
@@ -9,10 +11,37 @@ import '../styles/layouts.scss';
 import logo from '../img/logo.png'
 import layout1 from '../img/layout-1.png';
 
+const names = [
+  {
+    name: 'Woodland',
+    id: 'woodland',
+    content: 'This is a layout styled with react-boostrap and css modules that provides a woodland theme.',
+    title: 'Woodland Layout',
+    image: {layout1},
+    index: 1   
+  },
+  {
+    name: 'Travel',
+    id: 'travel',
+    content: 'This is a layout styled with Material-UI that provides a travel theme.',
+    title: 'Travel Layout',
+    image: {logo},
+    index: 2
+  },
+  {
+    name: 'Sports',
+    id: 'sports',
+    content: 'This is a layout styled with Bulma.io that provides a sports theme.',
+    title: 'Sports Layout',
+    image: {logo},
+    index: 3
+  }
+]
 
 const Layouts = () => {
   const [ onLayout, setOnLayout ] = useState(false);
   const { setOnHome } = useContext(AppContext);
+  const { url } = useRouteMatch();
 
   const onLoad = () => {
     setOnLayout(true);
@@ -31,7 +60,7 @@ const Layouts = () => {
   useEffect(() => { 
     
   }, []);
-
+  console.log(names[0].image)
   return(
     <Container className='layout-container' data-aos='fade-up'>
       <Row className='layout-info mt-3'>
@@ -40,30 +69,19 @@ const Layouts = () => {
         </p>
       </Row>
       <Row className='card-row'>
-        <Col lg={4}>
-          <ProjectCard 
-            image={layout1} 
-            title='Woodland Layout' 
-            content='This is a layout styled with react-boostrap and css modules that provides a woodland theme.'
-            path='/woodland'
-          />
-        </Col>
-        <Col lg={4}>
-          <ProjectCard 
-            image={logo} 
-            title='Travel Layout' 
-            content='This is a layout styled with Material-UI that provides a travel theme.'
-            path='/travel'
-          />
-        </Col>
-        <Col lg={4}>
-          <ProjectCard 
-            image={logo} 
-            title='Sports Layout' 
-            content='This is a layout styled with Bulma.io that provides a sports theme.'
-            path='/sports'
-          />
-        </Col>
+        {names.map(({ id, image, title, content, index}) => (
+          <Col lg={4}>
+            <Link className='project-link' to={`${url}/${id}`}>
+              <ProjectCard 
+                key={id}
+                image={image} 
+                title={title}
+                content={content}
+                id={index}
+              />
+            </Link>
+          </Col>
+        ))}
       </Row>
     </Container>
   )
