@@ -40,7 +40,7 @@ const names = [
 
 const Layouts = () => {
   const [ onLayout, setOnLayout ] = useState(false);
-  const { setOnHome, setOnProject, onProject } = useContext(AppContext);
+  const { setOnHome, setOnProject } = useContext(AppContext);
   const { url } = useRouteMatch();
   
   const onLoad = () => {

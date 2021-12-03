@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     onLoad();
-  }, [])
+  })
 
   if(onHome === true) {
     document.body.classList.add('no-scroll');
