@@ -49,9 +49,7 @@ const Layouts = () => {
   }
 
   const handleProjectClick = () => {
-    console.log('runs')
     setOnProject(true);
-    console.log(onProject + 'function')
   }
 
   useEffect(() => {

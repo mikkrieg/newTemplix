@@ -11,7 +11,6 @@ function Navbar() {
   const handleClick = () => {
     setClick(!click);
     if(click === false) {
-      console.log('inside')
       document.body.classList.add('no-scroll');
     } else {
       document.body.classList.remove('no-scroll');
