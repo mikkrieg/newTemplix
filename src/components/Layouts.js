@@ -40,12 +40,18 @@ const names = [
 
 const Layouts = () => {
   const [ onLayout, setOnLayout ] = useState(false);
-  const { setOnHome } = useContext(AppContext);
+  const { setOnHome, setOnProject, onProject } = useContext(AppContext);
   const { url } = useRouteMatch();
-
+  
   const onLoad = () => {
-    setOnLayout(true);
     setOnHome(false);
+    setOnLayout(true);
+  }
+
+  const handleProjectClick = () => {
+    console.log('runs')
+    setOnProject(true);
+    console.log(onProject + 'function')
   }
 
   useEffect(() => {
@@ -57,10 +63,6 @@ const Layouts = () => {
     document.body.classList.remove('no-scroll')
   }
 
-  useEffect(() => { 
-    
-  }, []);
-  console.log(names[0].image)
   return(
     <Container className='layout-container' data-aos='fade-up'>
       <Row className='layout-info mt-3'>
@@ -70,10 +72,9 @@ const Layouts = () => {
       </Row>
       <Row className='card-row'>
         {names.map(({ id, image, title, content, index}) => (
-          <Col lg={4}>
-            <Link className='project-link' to={`${url}/${id}`}>
+          <Col lg={4} key={id}>
+            <Link className='project-link' to={`${url}/${id}`} onClick={handleProjectClick}>
               <ProjectCard 
-                key={id}
                 image={image} 
                 title={title}
                 content={content}
