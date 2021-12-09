@@ -4,14 +4,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './../../styles/Layouts/woodland.scss';
 import Button from 'react-bootstrap/Button';
+import InfoModal from './../InfoModal';
 import { useHistory } from 'react-router'
 // import InfoModal from '../InfoModal.js';
 import { AppContext } from '../../AppContext';
 
 const Woodland = () => {
-  const [ menuClicked, setMenuClicked ] = useState(false); 
+  const [ menuClicked, setMenuClicked ] = useState(false);
+  const [ open, setOpen ] = useState(false);
   const { setOnProject, onProject } = useContext(AppContext);
   const history = useHistory();
+
 
   if(onProject === true) {
     document.body.classList.remove('background');
@@ -27,13 +30,36 @@ const Woodland = () => {
 
   const menuClick = () => {
     let h1 = document.getElementsByClassName('layout-heading');
-    if(menuClicked === true) {
-      h1.classList.add('hide');
+
+    if(menuClicked === false) {
+      h1[0].classList.add('hide');
+      h1[0].classList.remove('show-heading');
     } else {
-      h1.classList.remove('hide');
+      h1[0].classList.remove('hide');
+      h1[0].classList.add('show-heading');
     }
-    setMenuClicked(!menuClicked);
+
+    if(menuClicked === false) {
+      setMenuClicked(true);
+    } else {
+      setMenuClicked(false);
+    }
   }
+
+  const handleModalClick = () => {
+    if(open === false) {
+      setOpen(true);
+    } else {
+      setOpen(false);
+    }
+  }
+
+  const hideModal = () => {
+    if(window.innerWidth < 960) {
+      setOpen(false);
+    }
+  }
+  window.onresize = hideModal;
 
   return(
     <div className='layout-background'>
@@ -57,23 +83,24 @@ const Woodland = () => {
         </Navbar.Collapse>
       </Navbar>
       <div className='layout-body'>
-        <h1 className='layout-heading'>Hello</h1>
+        <div className='heading-div'>
+          <h1 className='layout-heading'>Hello</h1>
+        </div>
         <footer className='footer-position'>&copy;2021</footer>
       </div>
   
-      <Button className="modal-activate" onClick={handleClick}>?</Button>
-      {/* <InfoModal 
+      <Button className="modal-activate" variant='light' onClick={handleModalClick}>?</Button>
+      <InfoModal 
       show={open} 
-      onHide={handleClick} 
+      onHide={handleModalClick} 
       title="Forest themed layout"
-      spec1="React-Bootstrap"
-      spec2="CSS-Modules"
-      spec3="15mb"
-      spec4="React"
-      spec5="JavaScript"
-      spec6="1"
-      spec7="1"
-      spec8="2"/> */}
+      styling={["React-Bootstrap", "CSS-Modules"]}
+      download="15mb"
+      technologies={["React", "JavaScript"]}
+      css="1"
+      content="1"
+      image="2"
+      installs={['NPM or another package manager', 'React', 'create-react-app', 'React-Bootstrap v2.0.2^']}/>
     </div>
   )
 };
