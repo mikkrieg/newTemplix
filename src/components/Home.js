@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <Container className='home-container'>
     <Row>
-      <Col xs={12} md={4}>
+      <Col xs={12}>
         <h1 className='fade-in'>Welcome</h1>
       </Col>
     </Row>
