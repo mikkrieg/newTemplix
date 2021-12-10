@@ -6,12 +6,11 @@
 
 .layout-container {
   padding-top: 8%;
-  // text-align: center;
 }
 
 .mark {
   font-weight: bolder;
-  font-size: 1.1em;
+  font-size: 1.15em;
   background-color: transparent !important;
 }
 
@@ -22,47 +21,10 @@
   padding: 0 5px 0 5px;
 }
 
-/* Modal Stylings */
-.modal-list {
-  list-style-type: none;
-  padding: 0;
+@media only screen and (min-width: 1000px) {
+  .layout-p {
+    margin-top: -30px !important;
+    font-size: 1.3em;
+  }
 }
 
-.spec-li:before {
-  content: "-";
-}
-
-.modal-span {
-  font-weight: bolder;
-}
-
-.close-button {
-  justify-content: flex-end;
-}
-
-.dl-button {
-  justify-content: flex-start;
-}
-
-.modal-foot {
-  justify-content: space-between;
-}
-
-.sr-only {
-  display: none;
-}
-
-.close {
-  background-color: transparent;
-  border: none;
-  font-size: 1.7em;
-}
-
-.card-row {
-  margin-top: 2% !important;
-}
-
-.project-link {
-  color: #000;
-  text-decoration: none;
-}

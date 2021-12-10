@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import 'aos/dist/aos.css';
-import styles from './../styles/projectCard.scss'
+import './../styles/projectCard.scss'
 
 const ProjectCard = (props) => {
   let image;
@@ -11,11 +11,11 @@ const ProjectCard = (props) => {
     image = props.image.logo
   }
   return (
-    <Card className={`${styles.cardStyles} mt-3`} id='card-1'>
-      <Card.Img variant='top' src={image}/>
+    <Card className='card-styles mt-3' id='card-1'>
+      <Card.Img variant='top' src={image} className='card-image'/>
       <Card.Body>
-        <Card.Title className={styles.cardTitle}>{props.title}</Card.Title>
-        <Card.Text className={styles.cardText}>{props.content}</Card.Text>
+        <Card.Title className='card-title'>{props.title}</Card.Title>
+        <Card.Text className='card-text'>{props.content}</Card.Text>
       </Card.Body>
     </Card>
   )

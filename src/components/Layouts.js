@@ -68,8 +68,9 @@ const Layouts = () => {
         </p>
       </Row>
       <Row className='card-row'>
+      
         {names.map(({ id, image, title, content, index}) => (
-          <Col lg={4} key={id}>
+          <Col sm={9} md={8} lg={4} key={id}>
             <Link className='project-link' to={`${url}/${id}`} onClick={handleProjectClick}>
               <ProjectCard 
                 image={image} 
