@@ -4,3 +4,43 @@
   margin-left: -15px;
   margin-top: 10px;
 }
+
+.modal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spec-li:before {
+  content: "-";
+}
+
+.modal-span {
+  font-weight: bolder;
+}
+
+.close-button {
+  justify-content: flex-end;
+}
+
+.dl-button {
+  justify-content: flex-start;
+}
+
+.modal-foot {
+  justify-content: space-between;
+}
+
+.sr-only {
+  display: none;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.7em;
+}
+
+.project-link {
+  color: #000;
+  text-decoration: none;
+}
