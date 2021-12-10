@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AppContext } from './../AppContext';
 import '../styles/navbar.scss';
 import img from '../img/logo.png';
 
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const { onHome, onLayout } = useContext(AppContext);
 
   const handleClick = () => {
     setClick(!click);
@@ -35,12 +37,12 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={function(e){closeMobileMenu(); returnScroll();}}>
-                <p className='color-links'>Home</p>
+                <p className={onHome ? 'color-links grow' : 'color-links'}>Home</p>
               </Link>
             </li>
-            <li className='nav-item by-btn'>
+            <li className='nav-item'>
               <Link to='/layouts' className='nav-links' onClick={function(e){closeMobileMenu(); returnScroll();}}>
-                <p className='color-links'>Layouts</p>
+                <p className={onLayout ? 'color-links grow' : 'color-links'}>Layouts</p>
               </Link>
             </li>
           </ul>
