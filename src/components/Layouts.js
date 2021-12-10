@@ -39,8 +39,7 @@ const names = [
 ]
 
 const Layouts = () => {
-  const [ onLayout, setOnLayout ] = useState(false);
-  const { setOnHome, setOnProject } = useContext(AppContext);
+  const { setOnHome, setOnProject, onLayout, setOnLayout } = useContext(AppContext);
   const { url } = useRouteMatch();
   
   const onLoad = () => {

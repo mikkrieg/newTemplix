@@ -9,7 +9,7 @@ import '../styles/home.scss';
 
 
 const Home = () => {
-  const { onHome, setOnHome } = useContext(AppContext);
+  const { onHome, setOnHome, setOnLayout, onLayout } = useContext(AppContext);
   const history = useHistory();
 
   const handleClick = () => {
@@ -18,6 +18,9 @@ const Home = () => {
 
   const onLoad = () => {
     setOnHome(true);
+    if(onLayout === true) {
+      setOnLayout(false);
+    }
   }
 
   useEffect(() => {
@@ -30,13 +33,9 @@ const Home = () => {
 
   return (
     <Container className='home-container'>
-    <Row>
-      <Col xs={12}>
+    <Row className='home-head'>
+      <Col xs={12} >
         <h1 className='fade-in'>Welcome</h1>
-      </Col>
-    </Row>
-    <Row>
-      <Col>
         <Button 
           onClick={handleClick}
           id='fade-button' 

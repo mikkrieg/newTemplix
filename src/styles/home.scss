@@ -29,11 +29,37 @@
 
   #fade-button {
     animation: fade 2s ease-in;
+    max-width: 50%;
   }
 }
 
 @keyframes fade {
   0% {
     opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .home-container {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 5em !important;
+    margin-top: 0 !important;
+  }
+
+  #fade-button {
+    font-size: 1.6em;
+    width: 50%;
+  }
+
+  .home-head {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-content: center;
+    justify-content: center;
   }
 }
