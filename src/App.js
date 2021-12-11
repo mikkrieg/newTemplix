@@ -7,7 +7,7 @@ import { AppContext } from './AppContext';
 import Travel from './components/Layouts/Travel';
 import Sports from './components/Layouts/Sports';
 import Woodland from './components/Layouts/Woodland';
-import './styles/background.scss';
+import './styles/css/background.css';
 // import './sass/main.scss';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 

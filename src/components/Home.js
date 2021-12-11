@@ -5,7 +5,7 @@ import { AppContext } from '../AppContext';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
-import '../styles/home.scss';
+import '../styles/css/home.css';
 
 
 const Home = () => {

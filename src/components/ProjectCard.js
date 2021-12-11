@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import 'aos/dist/aos.css';
-import './../styles/projectCard.scss'
+import './../styles/css/projectCard.css'
 
 const ProjectCard = (props) => {
   let image;

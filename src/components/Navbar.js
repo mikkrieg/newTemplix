@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from './../AppContext';
-import '../styles/navbar.scss';
+import '../styles/css/navbar.css';
 import img from '../img/logo.png';
 
 

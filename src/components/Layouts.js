@@ -7,7 +7,7 @@ import Aos from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 import ProjectCard from './ProjectCard';
-import '../styles/layouts.scss';
+import '../styles/css/layouts.css';
 import logo from '../img/logo.png'
 import layout1 from '../img/layout-1.png';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import './../styles/Layouts/infoModal.scss';
+import './../styles/css/layouts/infoModal.css';
 
 const InfoModal = (props) => {
   return (

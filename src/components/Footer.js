@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './../styles/footer.scss';
+import './../styles/css/footer.css';
 import { AppContext } from '../AppContext';
 
 const Footer = () => {

@@ -1,12 +1,10 @@
 import React, { useContext, useState } from 'react';
-import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import './../../styles/Layouts/woodland.scss';
+import './../../styles/css/layouts/woodland.css';
 import Button from 'react-bootstrap/Button';
 import InfoModal from './../InfoModal';
 import { useHistory } from 'react-router'
-// import InfoModal from '../InfoModal.js';
 import { AppContext } from '../../AppContext';
 
 const Woodland = () => {
