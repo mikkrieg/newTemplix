@@ -1,3 +1,52 @@
+.travel-background {
+  background-image: url(./../../../img/travel-bg.jpg);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: fade-in 1s ease-in;
+}
 
+.travel-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 4px 4px #384db0;
+}
+
+.travel-footer {
+  color: #FFF;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+}
+
+.travel-home-btn {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer-icon {
+  justify-self: flex-end;
+}
+
+.css-10hburv-MuiTypography-root {
+  font-size: 1.5em !important;
+  margin-left: 20px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .travel-menu {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=travel.css.map */
