@@ -1,0 +1,56 @@
+.background {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.background--color-map {
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-name: animation-colors;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-colors {
+  0% {
+    background-color: #ed7b9c;
+  }
+  20% {
+    background-color: #8d81eb;
+  }
+  40% {
+    background-color: #71aafa;
+  }
+  60% {
+    background-color: #aecfb0;
+  }
+  80% {
+    background-color: #f7ea83;
+  }
+  100% {
+    background-color: #ed7b9c;
+  }
+}
+@keyframes colors-text {
+  0% {
+    color: #ed7b9c;
+  }
+  20% {
+    color: #8d81eb;
+  }
+  40% {
+    color: #71aafa;
+  }
+  60% {
+    color: #aecfb0;
+  }
+  80% {
+    color: #f7ea83;
+  }
+  100% {
+    color: #ed7b9c;
+  }
+}
+
+/*# sourceMappingURL=background.css.map */

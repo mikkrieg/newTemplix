@@ -1,0 +1,65 @@
+
+
+.home-container {
+  padding-top: 17%;
+  text-align: center;
+
+  .btn-outline-dark:hover {
+    background-color: transparent !important;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+  }
+  
+  .text-color {
+    color: #000;
+  }
+  
+  .text-color:hover {
+    color: #FFF;
+    border-color: #FFF
+  }
+  
+  .fade-in {
+    animation: fade 2s ease-in;
+    margin-top: 25%;
+  }
+
+  #fade-button {
+    animation: fade 2s ease-in;
+    max-width: 50%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .home-container {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 5em !important;
+    margin-top: 0 !important;
+  }
+
+  #fade-button {
+    font-size: 1.6em;
+    width: 20%;
+  }
+
+  .home-head {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-content: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,32 @@
+.card-styles {
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  height: 95%;
+}
+.card-styles:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  color: #000;
+  backface-visibility: hidden;
+}
+
+.card-image {
+  height: 190px;
+}
+
+.card-text {
+  font-size: 1.2em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-row {
+  margin-top: 2% !important;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=projectCard.css.map */
