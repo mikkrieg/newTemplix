@@ -28,7 +28,6 @@ const Travel = () => {
     ) {
       return;
     }
-
     setClick(!click);
   };
 
@@ -56,14 +55,28 @@ const Travel = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <Grid sx={{display: 'flex', justifyContent: 'flex-end', marginRight: '20px', fontSize: '1.6em', color: '#FFF'}}>
+        <Grid 
+        sx={{
+          display: 'flex', 
+          justifyContent: 'flex-end', 
+          marginRight: '20px', 
+          fontSize: '1.6em', 
+          color: '#FFF'
+          }}
+        >
           <Grid item>
             <i className='fas fa-times drawer-icon'/>
           </Grid>
         </Grid>
         {['Link 1', 'Link 2', 'Link 3'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemText className='travel-links' primary={text} sx={{ color: '#FFF', }}/>
+            <ListItemText 
+              className='travel-links' 
+              primary={text} 
+              sx={{ 
+                color: '#FFF'
+              }}
+            />
           </ListItem>
         ))}
       </List>
@@ -89,13 +102,15 @@ const Travel = () => {
               sx={{ 
                 justifyContent: 'flex-start', 
                 color: '#FFF', 
-                fontWeight: 'bold' 
+                fontWeight: 'bold', 
+                fontSize: {md: '1.6em'}
               }}
               onClick={handleBack}
             >
               Go Back
             </Button>
             <IconButton
+              sx={{ display: {sm: 'none'}}}
               size="medium"
               edge="start"
               color="inherit"
@@ -112,14 +127,55 @@ const Travel = () => {
             >
               {list()}
             </SwipeableDrawer>
-            <Grid className='travel-links' sx={{ display: {xs:'none', sm:'flex'}, justifyContent: 'space-between'}}>
-              <Grid item>
+            <Grid 
+              className='travel-links' 
+              sx={{ 
+                display: {
+                xs:'none', 
+                sm:'flex'}, 
+                justifyContent: 'flex-end'
+              }}
+            >
+              <Grid 
+                item 
+                sx={{
+                  marginRight: '60px', 
+                  fontSize: '1.4em', 
+                  cursor: 'pointer',
+                  '&:hover': {
+                    transform: 'scale(1.2)',
+                    transition: 'all .2s ease-in-out'
+                  }
+                }}
+              >
                 Link 1   
               </Grid>
-              <Grid item>
+              <Grid 
+                item 
+                sx={{
+                  marginRight: '60px', 
+                  fontSize: '1.4em', 
+                  cursor: 'pointer',
+                  '&:hover': {
+                    transform: 'scale(1.2)',
+                    transition: 'all .2s ease-in-out'
+                  }
+                }}
+              >
                 Link 2
               </Grid>
-              <Grid item>
+              <Grid 
+                item 
+                sx={{
+                  marginRight: '60px', 
+                  fontSize: '1.4em', 
+                  cursor: 'pointer',
+                  '&:hover': {
+                    transform: 'scale(1.2)',
+                    transition: 'all .2s ease-in-out'
+                  }
+                }}
+              >
                 Link 3
               </Grid>
             </Grid>
