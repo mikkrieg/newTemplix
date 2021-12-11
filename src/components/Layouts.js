@@ -9,7 +9,8 @@ import Col from 'react-bootstrap/Col';
 import ProjectCard from './ProjectCard';
 import '../styles/css/layouts.css';
 import logo from '../img/logo.png'
-import layout1 from '../img/layout-1.png';
+import layout1 from './../img/layout-1.png';
+import layout2 from './../img/layout-2.png';
 
 const names = [
   {
@@ -25,7 +26,7 @@ const names = [
     id: 'travel',
     content: 'This is a layout styled with Material-UI that provides a travel theme.',
     title: 'Travel Layout',
-    image: {logo},
+    image: {layout2},
     index: 2
   },
   {
