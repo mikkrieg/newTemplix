@@ -15,7 +15,7 @@ const Sports = () => {
   }
   return (
     <>
-      <div className='travel-background'>
+      <div className='sports-background'>
         <h1>Sports</h1>
         <Button onClick={handleClick}>Go Back</Button>
       </div>

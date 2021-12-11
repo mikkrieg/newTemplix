@@ -89,16 +89,17 @@ const Woodland = () => {
   
       <Button className="modal-activate" variant='light' onClick={handleModalClick}>?</Button>
       <InfoModal 
-      show={open} 
-      onHide={handleModalClick} 
-      title="Forest themed layout"
-      styling={["React-Bootstrap", "CSS-Modules"]}
-      download="15mb"
-      technologies={["React", "JavaScript"]}
-      css="1"
-      content="1"
-      image="2"
-      installs={['NPM or another package manager', 'React', 'create-react-app', 'React-Bootstrap v2.0.2^']}/>
+        show={open} 
+        onHide={handleModalClick} 
+        title="Forest themed layout"
+        styling={["React-Bootstrap", "CSS-Modules"]}
+        download="15mb"
+        technologies={["React", "JavaScript"]}
+        css="1"
+        content="1"
+        image="2"
+        installs={['NPM or another package manager', 'React', 'create-react-app', 'React-Bootstrap v2.0.2^']}
+      />
     </div>
   )
 };
