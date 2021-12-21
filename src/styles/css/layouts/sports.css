@@ -1,4 +1,3 @@
-
 .sports-background {
   background-image: url(./../../../img/sports-bg.jpg);
   height: 100%;
@@ -8,4 +7,39 @@
   background-position: center;
   animation: fade-in 1s ease-in;
 }
+.sports-background .sports-nav {
+  background-color: rgba(223, 247, 243, 0.85);
+  height: 80px;
+}
+.sports-background .sports-nav .back-btn-sports {
+  color: #000 !important;
+}
+.sports-background .sports-nav .navbar-brand {
+  flex-grow: 1;
+}
+.sports-background .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+.sports-background .sports-footer {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+}
+.sports-background .navbar-item {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+.sports-background .navbar-item:hover {
+  color: #000 !important;
+}
+
 /*# sourceMappingURL=sports.css.map */

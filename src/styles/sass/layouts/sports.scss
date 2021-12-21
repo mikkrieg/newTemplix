@@ -1,0 +1,61 @@
+.sports-background {
+  background-image: url(./../../../img/sports-bg.jpg);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: fade-in 1s ease-in;
+
+  .sports-nav {
+    background-color: rgba(223, 247, 243, .85);
+    height: 80px;
+    
+    .back-btn-sports {
+      color: #000 !important;
+    }
+
+    .navbar-brand {
+      flex-grow: 1;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+  }
+  
+  .sports-footer {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+  }
+
+  // .navbar-menu {
+  //   position: absolute;
+  //   top: 82px;
+  //   right: 10px;
+  //   background-color: rgba(242,234,249, 1);
+  // }
+
+  .navbar-item {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+      color: #000 !important;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+}
+
