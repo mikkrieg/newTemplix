@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
   } else if(props.id === 2) {
     image = props.image.layout2;
   } else {
-    image = props.image.logo;
+    image = props.image.layout3;
   }
   return (
     <Card className='card-styles mt-3' id='card-1'>

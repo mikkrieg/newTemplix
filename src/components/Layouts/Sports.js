@@ -35,13 +35,13 @@ const Sports = () => {
           <button className='button is-primary is-light is-large ml-4 back-btn-sports' onClick={handleClick}>Go Back</button>
         </div>
         <div classname='burger-div'>
-        <a role="button" className="navbar-burger mr-5" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={activate}>
+          <a role="button" className="navbar-burger mr-5" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={activate}>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div id="navbarBasicExample" className="navbar-menu desktop-menu">
           <div className="navbar-end mr-5">
             <a className="navbar-item mr-3 mt-1">
               Link 1
@@ -56,7 +56,7 @@ const Sports = () => {
         </div>
       </nav>
       <div className='content'>
-        <h1 className='is-size-3-mobile is-size-2-tablet is-size-1-desktop title is-uppercase has-text-centered'>Find your community</h1>
+        <h1 className='is-size-2-mobile is-size-2-tablet is-size-1-desktop title is-uppercase has-text-centered'>Find your community</h1>
         <button className='button is-primary is-large'>Sign Up!</button>
       </div>
       <footer className='sports-footer'>&copy;2021</footer>

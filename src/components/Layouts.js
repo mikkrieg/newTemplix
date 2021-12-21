@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import {AppContext} from '../AppContext';
 import { useRouteMatch } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -8,9 +8,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 import ProjectCard from './ProjectCard';
 import '../styles/css/layouts.css';
-import logo from '../img/logo.png'
 import layout1 from './../img/layout-1.png';
 import layout2 from './../img/layout-2.png';
+import layout3 from './../img/layout-3.png'
 
 const names = [
   {
@@ -34,7 +34,7 @@ const names = [
     id: 'sports',
     content: 'This is a layout styled with Bulma.io that provides a sports theme.',
     title: 'Sports Layout',
-    image: {logo},
+    image: {layout3},
     index: 3
   }
 ]

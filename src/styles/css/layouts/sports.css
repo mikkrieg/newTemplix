@@ -32,6 +32,12 @@
   bottom: 0;
   width: 100%;
 }
+.sports-background .desktop-menu {
+  position: absolute;
+  top: 82px;
+  right: 10px;
+  background-color: #f2eaf9;
+}
 .sports-background .navbar-item {
   font-size: 1.5em;
   font-weight: bold;
@@ -40,6 +46,14 @@
 }
 .sports-background .navbar-item:hover {
   color: #000 !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop-menu {
+    background-color: transparent !important;
+    top: 10px !important;
+    right: -10px !important;
+  }
 }
 
 /*# sourceMappingURL=sports.css.map */
