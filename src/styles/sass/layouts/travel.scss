@@ -43,6 +43,10 @@
   margin-left: 20px !important;
 }
 
+.travel-modal {
+  display: none !important;
+}
+
 @media only screen and (min-width: 1024px) {
   .travel-modal {
     color: #FFF !important;
@@ -58,6 +62,7 @@
     position: absolute !important;
     bottom: 10% !important;
     right: 10% !important;
+    display: block !important;
 
     &:hover, &:active, &:focus {
       background-color: rgba(255, 255, 255, 0.6) !important;

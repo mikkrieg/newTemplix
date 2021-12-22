@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { useContext, useState, useEffect} from 'react';
 import { useHistory } from 'react-router'
 import { AppContext } from '../../AppContext';
 import InfoModal from './../InfoModal';
@@ -10,7 +9,11 @@ const Sports = () => {
   const [ open, setOpen ] = useState(false);
   const [ click, setClick ] = useState(false);
   const history = useHistory();
-  console.log(click);
+  
+  useEffect(() => {
+    setOnProject(true);
+  }, [])
+
   const handleClick = () => {
     setOnProject(false);
     document.body.classList.add('background');

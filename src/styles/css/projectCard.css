@@ -31,11 +31,28 @@
 
 @media only screen and (min-width: 768px) {
   .card-styles {
-    height: 90%;
+    height: 92%;
   }
 
   .card-image {
     height: 170px;
+  }
+
+  .card-row {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .card-styles {
+    height: 100%;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+
+  .card-row {
+    padding-top: 2%;
   }
 }
 

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './../../styles/css/layouts/woodland.css';
@@ -12,6 +12,10 @@ const Woodland = () => {
   const [ open, setOpen ] = useState(false);
   const { setOnProject, onProject } = useContext(AppContext);
   const history = useHistory();
+
+  useEffect(() => {
+    setOnProject(true);
+  }, [])
 
 
   if(onProject === true) {

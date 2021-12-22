@@ -1,11 +1,11 @@
 .layout-p {
-  margin-top: -20px;
+  margin-top: -80px;
   font-size: 1.1em;
   text-align: center;
 }
 
 .layout-container {
-  padding-top: 8%;
+  padding-top: 2%;
 }
 
 .mark {
@@ -21,10 +21,29 @@
   padding: 0 5px 0 5px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 769px) {
   .layout-p {
-    margin-top: -60px !important;
+    margin-bottom: 75px;
     font-size: 1.3em;
+  }
+
+  .layout-container {
+    padding-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .layout-p {
+    margin-bottom: 15px;
+  }
+  .layout-container {
+    padding-top: 1%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .layout-container {
+    padding-top: 5%;
   }
 }
 

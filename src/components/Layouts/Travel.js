@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { useHistory } from 'react-router'
@@ -21,6 +21,10 @@ const Travel = () => {
   const [ open, setOpen ] = useState(false);
   const { setOnProject } = useContext(AppContext);
   const history = useHistory();
+
+  useEffect(() => {
+    setOnProject(true);
+  }, [])
 
   const toggleDrawer = (open) => (event) => {
     if (
