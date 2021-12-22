@@ -29,4 +29,14 @@
   justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .card-styles {
+    height: 90%;
+  }
+
+  .card-image {
+    height: 170px;
+  }
+}
+
 /*# sourceMappingURL=projectCard.css.map */

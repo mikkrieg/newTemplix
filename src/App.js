@@ -13,6 +13,10 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   const { onProject } = useContext(AppContext);
+  if(onProject === true) {
+    document.body.classList.remove('background--color-map');
+    document.body.classList.add('no-scroll');
+  }
   return (
     <>
     {onProject ? 
