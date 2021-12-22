@@ -8,7 +8,7 @@ const Sports = () => {
   const { setOnProject } = useContext(AppContext);
   const [ click, setClick ] = useState(false);
   const history = useHistory();
-
+  console.log(click);
   const handleClick = () => {
     setOnProject(false);
     document.body.classList.add('background');
@@ -18,30 +18,30 @@ const Sports = () => {
 
   const activate = () => {
     setClick(!click)
-    let burger = document.getElementsByClassName('navbar-burger');
-    let menu = document.getElementsByClassName('navbar-menu');
-    if(click === true) {
-      burger[0].classList.add('is-active');
-      menu[0].classList.add('is-active');
-    } else {
-      burger[0].classList.remove('is-active');
-      menu[0].classList.remove('is-active');
-    }
   }
+
   return (
     <div className='sports-background'>
       <nav className="navbar sports-nav" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <button className='button is-primary is-light is-large ml-4 back-btn-sports' onClick={handleClick}>Go Back</button>
         </div>
-        <div classname='burger-div'>
-          <a role="button" className="navbar-burger mr-5" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={activate}>
+        <div className='burger-div'>
+          <button 
+            onClick={activate} 
+            className={click ? 'navbar-burger mr-5 is-active' : 'navbar-burger mr-5'} 
+            aria-label="menu" aria-expanded="false" 
+            data-target="navbarBasicExample"
+          >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </button>
         </div>
-        <div id="navbarBasicExample" className="navbar-menu desktop-menu">
+        <div 
+          id="navbarBasicExample" 
+          className={click ? 'navbar-menu desktop-menu is-active' : 'navbar-menu desktop-menu'}
+        >
           <div className="navbar-end mr-5">
             <a className="navbar-item mr-3 mt-1">
               Link 1
