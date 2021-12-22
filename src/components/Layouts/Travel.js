@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { useHistory } from 'react-router'
@@ -9,6 +9,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import InfoModal from './../InfoModal';
 
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import List from '@mui/material/List';
@@ -17,8 +18,13 @@ import ListItemText from '@mui/material/ListItemText';
 
 const Travel = () => {
   const [ click, setClick ] = useState(false);
+  const [ open, setOpen ] = useState(false);
   const { setOnProject } = useContext(AppContext);
   const history = useHistory();
+
+  useEffect(() => {
+    setOnProject(true);
+  }, [])
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -41,6 +47,14 @@ const Travel = () => {
   const handleMenuClick = () => {
     setClick(!click);
     toggleDrawer(true);
+  }
+
+  const handleModalClick = () => {
+    if(open === false) {
+      setOpen(true);
+    } else {
+      setOpen(false);
+    }
   }
 
   const list = (anchor) => (
@@ -216,6 +230,19 @@ const Travel = () => {
           Book Here!
         </Button>
       </div>
+      <Button className="travel-modal" onClick={handleModalClick}>?</Button>
+      <InfoModal 
+        show={open} 
+        onHide={handleModalClick} 
+        title="Forest themed layout"
+        styling={["MaterialUI"]}
+        download="15mb"
+        technologies={["React", "JavaScript"]}
+        css="1"
+        content="1"
+        image="1"
+        installs={['NPM or another package manager', 'React', 'create-react-app', 'MaterialUI v5.2.3^']}
+      />
       <footer className='travel-footer'>&copy;2021</footer>
     </div>
   )

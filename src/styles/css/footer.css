@@ -1,25 +1,50 @@
 footer {
-  position: relative;
+  position: absolute;
   justify-content: center;
   display: flex;
   font-weight: bold;
-  padding: 10px 10px 15px 10px;
-  bottom: 0;
+  padding: 15px 10px 0 10px;
+  bottom: 10px;
   width: 100%;
 }
 
-.home-position {
-  position: fixed;
-  bottom: 1px;
+.layout-position {
+  position: relative;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  footer {
+    font-size: 1.3em;
+  }
+
+  .layout-position {
+    margin-top: 20%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  footer {
+    font-size: 1.3em;
+  }
+
+  .home-position {
+    bottom: 13.5px;
+  }
+
+  .layout-position {
+    margin-top: -1%;
+  }
+}
+@media only screen and (min-width: 1300px) {
   footer {
     font-size: 1.5em;
   }
 
+  .home-position {
+    bottom: 10px;
+  }
+
   .layout-position {
-    margin-top: 10.4%;
+    margin-top: 12%;
   }
 }
 

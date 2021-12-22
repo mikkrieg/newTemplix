@@ -1,14 +1,19 @@
-import React, { useContext, useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { useContext, useState, useEffect} from 'react';
 import { useHistory } from 'react-router'
 import { AppContext } from '../../AppContext';
+import InfoModal from './../InfoModal';
 import './../../styles/css/layouts/sports.css';
 
 const Sports = () => {
   const { setOnProject } = useContext(AppContext);
+  const [ open, setOpen ] = useState(false);
   const [ click, setClick ] = useState(false);
   const history = useHistory();
-  console.log(click);
+  
+  useEffect(() => {
+    setOnProject(true);
+  }, [])
+
   const handleClick = () => {
     setOnProject(false);
     document.body.classList.add('background');
@@ -18,6 +23,14 @@ const Sports = () => {
 
   const activate = () => {
     setClick(!click)
+  }
+
+  const handleModalClick = () => {
+    if(open === false) {
+      setOpen(true);
+    } else {
+      setOpen(false);
+    }
   }
 
   return (
@@ -59,6 +72,19 @@ const Sports = () => {
         <h1 className='is-size-2-mobile is-size-2-tablet is-size-1-desktop title is-uppercase has-text-centered'>Find your community</h1>
         <button className='button is-primary is-large'>Sign Up!</button>
       </div>
+      <button className="sports-modal button is-light"  onClick={handleModalClick}>?</button>
+      <InfoModal 
+        show={open} 
+        onHide={handleModalClick} 
+        title="Sports Themed Layout"
+        styling={['Bulma.io']}
+        download="15mb"
+        technologies={["React", "JavaScript"]}
+        css="1"
+        content="1"
+        image="1"
+        installs={[['NPM or another package manager', 'React', 'create-react-app', 'Bulma.io v0.9.3^']]}
+      />
       <footer className='sports-footer'>&copy;2021</footer>
     </div>
   )

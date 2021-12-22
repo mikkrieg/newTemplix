@@ -10,15 +10,14 @@ body {
 html {
   scroll-behavior: smooth;
   height: 100%;
-  overflow: auto;
 }
 
 #root {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .no-scroll {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 code {

@@ -13,27 +13,24 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   const { onProject } = useContext(AppContext);
+  if(onProject === true) {
+    document.body.classList.remove('background--color-map');
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.add('background--color-map');
+  }
   return (
-    <>
-    {onProject ? 
-      <Router>
-        <Switch>
-          <Route path='/layouts/woodland' component={Woodland}/>
-          <Route path='/layouts/sports' component={Sports}/>
-          <Route path='/layouts/travel' component={Travel}/> 
-        </Switch>
-      </Router>
-    : 
-      <Router>
-        <Navbar/>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/layouts' component={Layouts} />
-        </Switch>
-        <Footer/>
-      </Router>
-    }
-    </>
+    <Router>
+      {onProject ? '' : <Navbar/>}
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/layouts' component={Layouts} />
+        <Route path='/layouts/woodland' component={Woodland}/>
+        <Route path='/layouts/sports' component={Sports}/>
+        <Route path='/layouts/travel' component={Travel}/> 
+      </Switch>
+      {onProject ? '' : <Footer/>}
+    </Router>
   );
 }
 

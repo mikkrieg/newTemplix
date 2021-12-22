@@ -48,11 +48,8 @@ const Layouts = () => {
     setOnLayout(true);
   }
 
-  const handleProjectClick = () => {
-    setOnProject(true);
-  }
-
   useEffect(() => {
+    setOnProject(false);
     onLoad();
     Aos.init({ duration: 1500 });
   }, [])
@@ -72,7 +69,7 @@ const Layouts = () => {
       
         {names.map(({ id, image, title, content, index}) => (
           <Col sm={9} md={8} lg={4} key={id}>
-            <Link className='project-link' to={`${url}/${id}`} onClick={handleProjectClick}>
+            <Link className='project-link' to={`${url}/${id}`}>
               <ProjectCard 
                 image={image} 
                 title={title}
