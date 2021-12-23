@@ -24,7 +24,7 @@ const Travel = () => {
 
   useEffect(() => {
     setOnProject(true);
-  }, [])
+  })
 
   const toggleDrawer = (open) => (event) => {
     if (

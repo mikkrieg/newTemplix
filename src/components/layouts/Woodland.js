@@ -15,7 +15,7 @@ const Woodland = () => {
 
   useEffect(() => {
     setOnProject(true);
-  }, [])
+  })
 
 
   if(onProject === true) {

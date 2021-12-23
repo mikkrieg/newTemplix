@@ -12,7 +12,7 @@ const Sports = () => {
   
   useEffect(() => {
     setOnProject(true);
-  }, [])
+  })
 
   const handleClick = () => {
     setOnProject(false);
@@ -56,15 +56,15 @@ const Sports = () => {
           className={click ? 'navbar-menu desktop-menu is-active' : 'navbar-menu desktop-menu'}
         >
           <div className="navbar-end mr-5">
-            <a className="navbar-item mr-3 mt-1">
+            <button className="navbar-item mr-3 mt-1">
               Link 1
-            </a>
-            <a className="navbar-item mr-3 mt-1">
+            </button>
+            <button className="navbar-item mr-3 mt-1">
               Link 2
-            </a>
-            <a className="navbar-item mr-3 mt-1">
+            </button>
+            <button className="navbar-item mr-3 mt-1">
               Link 3
-            </a>
+            </button>
           </div>
         </div>
       </nav>

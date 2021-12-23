@@ -50,8 +50,11 @@
     font-weight: bold;
     text-decoration: none;
     text-align: center;
+    border: none;
+    background-color: transparent;
     &:hover {
       color: #000 !important;
+      background-color: #FFF;
     }
   }
 }

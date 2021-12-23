@@ -53,7 +53,7 @@ const Layouts = () => {
     setOnProject(false);
     onLoad();
     Aos.init({ duration: 1500 });
-  }, [])
+  })
 
   if(onLayout === true) {
     document.body.classList.remove('no-scroll')
