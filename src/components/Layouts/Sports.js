@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect} from 'react';
 import { useHistory } from 'react-router'
 import { AppContext } from '../../AppContext';
 import InfoModal from '../InfoModal';
-import './../../styles/css/layouts/sports.css';
+import '../../styles/css/layouts/sports.css';
 
 const Sports = () => {
   const { setOnProject } = useContext(AppContext);
