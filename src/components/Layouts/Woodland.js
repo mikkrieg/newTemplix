@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './../../styles/css/layouts/woodland.css';
 import Button from 'react-bootstrap/Button';
-import InfoModal from './../InfoModal';
+import InfoModal from '../InfoModal';
 import { useHistory } from 'react-router'
 import { AppContext } from '../../AppContext';
 
