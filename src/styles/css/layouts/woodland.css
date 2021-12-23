@@ -96,6 +96,7 @@
 @media only screen and (min-width: 768px) {
   .layout-navs {
     margin-right: 40px;
+    margin-bottom: 25px;
   }
   .layout-navs:hover {
     color: #a1a1a1 !important;
@@ -142,6 +143,11 @@
 }
 /* Styling for large screens */
 @media only screen and (min-width: 1500px) {
+  @supports (-moz-appearance: none) {
+    .layout-navs {
+      margin-bottom: 25px !important;
+    }
+  }
   .layout-1-nav {
     padding-bottom: 20px;
   }

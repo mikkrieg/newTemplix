@@ -92,7 +92,7 @@
 @media only screen and (min-width: 768px) {
   .layout-navs {
     margin-right: 40px;
-    // margin-bottom: 25px;
+    margin-bottom: 25px;
 
     &:hover {
       color: rgb(161, 161, 161) !important;
@@ -142,11 +142,14 @@
     }
 }
 
-
-
-
 /* Styling for large screens */
 @media only screen and (min-width: 1500px) {
+
+  @supports (-moz-appearance:none) {
+    .layout-navs {
+      margin-bottom: 25px !important;
+    }
+  }
   .layout-1-nav {
     padding-bottom: 20px;
   }
