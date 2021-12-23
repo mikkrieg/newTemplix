@@ -70,7 +70,7 @@ const Layouts = () => {
       
         {names.map(({ id, image, title, content, index}) => (
           <Col sm={9} md={8} lg={4} key={id}>
-            <Link className='project-link' to={`layouts/${id}`}>
+            <Link className='project-link' to={`${id}`}>
               <ProjectCard 
                 image={image} 
                 title={title}

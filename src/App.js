@@ -9,7 +9,7 @@ import Sports from './components/layouts/Sports';
 import Woodland from './components/layouts/Woodland';
 import './styles/css/background.css';
 // import './sass/main.scss';
-import {Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   const { onProject } = useContext(AppContext);
@@ -20,17 +20,17 @@ function App() {
     document.body.classList.add('background--color-map');
   }
   return (
-    <>
+    <Router>
       {onProject ? '' : <Navbar/>}
         <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route exact path='layouts/' element={<Layouts/>} />
-          <Route path='/layouts/woodland' component={<Woodland/>}/>
+          <Route path='/layouts/woodland' element={<Woodland/>}/>
           <Route path='/layouts/sports' element={<Sports/>}/>
           <Route path='/layouts/travel' element={<Travel/>}/> 
         </Routes>
       {onProject ? '' : <Footer/>}
-    </>
+    </Router>
   );
 }
 
