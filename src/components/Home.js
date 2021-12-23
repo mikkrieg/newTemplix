@@ -33,21 +33,21 @@ const Home = () => {
 
   return (
     <Container className='home-container'>
-    <Row className='home-head'>
-      <Col xs={12} >
-        <h1 className='fade-in'>Welcome</h1>
-        <Button 
-          onClick={handleClick}
-          id='fade-button' 
-          className='background--color-map mt-3 text-color' 
-          variant='outline-dark' 
-          size='lg'
-        >
-          Browse Layouts
-        </Button>
-      </Col>
-    </Row>
-  </Container>
+      <Row className='home-head'>
+        <Col xs={12} >
+          <h1 className='fade-in'>Welcome</h1>
+          <Button
+            onClick={handleClick}
+            id='fade-button'
+            className='background--color-map mt-3 text-color'
+            variant='outline-dark'
+            size='lg'
+          >
+            Browse Layouts
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

@@ -4,9 +4,9 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Layouts from './components/Layouts';
 import { AppContext } from './AppContext';
-import Travel from './components/layouts/Travel';
-import Sports from './components/layouts/Sports';
-import Woodland from './components/layouts/Woodland';
+import Travel from './components/layouts/Travel.js';
+import Sports from './components/layouts/Sports.js';
+import Woodland from './components/layouts/Woodland.js';
 import './styles/css/background.css';
 // import './sass/main.scss';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -35,14 +35,3 @@ function App() {
 }
 
 export default App;
-
-// {onProject ? 
-//   <>
-//   
-// </>
-// :
-//   <>
-//     <Route exact path='/' component={Home} />
-//     <Route exact path='/layouts' component={Layouts} />
-//   </>
-// }
