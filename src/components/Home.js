@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../AppContext';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
@@ -10,10 +10,10 @@ import '../styles/css/home.css';
 
 const Home = () => {
   const { onHome, setOnHome, setOnLayout, onLayout } = useContext(AppContext);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push('./layouts');
+    navigate('./layouts');
   }
 
   const onLoad = () => {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import {AppContext} from '../AppContext';
-import { useRouteMatch } from 'react-router';
+// import { useMatch } from 'react-router';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Aos from 'aos';
@@ -41,7 +41,8 @@ const names = [
 
 const Layouts = () => {
   const { setOnHome, setOnProject, onLayout, setOnLayout } = useContext(AppContext);
-  const { url } = useRouteMatch();
+  // const { url } = useMatch();
+  // console.log(url);
   
   const onLoad = () => {
     setOnHome(false);
@@ -69,7 +70,7 @@ const Layouts = () => {
       
         {names.map(({ id, image, title, content, index}) => (
           <Col sm={9} md={8} lg={4} key={id}>
-            <Link className='project-link' to={`${url}/${id}`}>
+            <Link className='project-link' to={`layouts/${id}`}>
               <ProjectCard 
                 image={image} 
                 title={title}

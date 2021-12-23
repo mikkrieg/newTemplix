@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect} from 'react';
-import { useHistory } from 'react-router'
+import { useNavigate } from 'react-router'
 import { AppContext } from '../../AppContext';
 import InfoModal from '../InfoModal';
 import '../../styles/css/layouts/sports.css';
@@ -8,7 +8,7 @@ const Sports = () => {
   const { setOnProject } = useContext(AppContext);
   const [ open, setOpen ] = useState(false);
   const [ click, setClick ] = useState(false);
-  const history = useHistory();
+  const navigate = useNavigate();
   
   useEffect(() => {
     setOnProject(true);
@@ -18,7 +18,7 @@ const Sports = () => {
     setOnProject(false);
     document.body.classList.add('background');
     document.body.classList.add('background--color-map');
-    history.push('/layouts');
+    navigate('/layouts');
   }
 
   const activate = () => {

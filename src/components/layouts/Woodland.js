@@ -4,14 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import './../../styles/css/layouts/woodland.css';
 import Button from 'react-bootstrap/Button';
 import InfoModal from '../InfoModal';
-import { useHistory } from 'react-router'
+import { useNavigate } from 'react-router'
 import { AppContext } from '../../AppContext';
 
 const Woodland = () => {
   const [ menuClicked, setMenuClicked ] = useState(false);
   const [ open, setOpen ] = useState(false);
   const { setOnProject, onProject } = useContext(AppContext);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setOnProject(true);
@@ -27,7 +27,7 @@ const Woodland = () => {
     setOnProject(false);
     document.body.classList.add('background');
     document.body.classList.add('background--color-map');
-    history.push('/layouts');
+    navigate('/layouts');
   }
 
   const menuClick = () => {
