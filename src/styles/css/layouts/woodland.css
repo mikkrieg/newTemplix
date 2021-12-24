@@ -9,6 +9,10 @@
   animation: fade-in 1s ease-in;
 }
 
+.button-styling {
+  margin-left: 30px;
+}
+
 .heading-div {
   display: flex;
   height: 100vh;
@@ -35,7 +39,6 @@
 .layout-1-nav {
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 0px 30px;
   height: 63px;
   justify-content: space-between !important;
 }
@@ -52,6 +55,7 @@
 .navbar-toggler {
   box-shadow: none !important;
   border: none !important;
+  padding-right: 30px;
 }
 .navbar-toggler:focus {
   box-shadow: none !important;
