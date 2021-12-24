@@ -1,5 +1,5 @@
 ![Templix Logo](./src/img/logo.png)
-## _Project: [Templix](https://templix.netlify.app/) Splash Templates_
+## _Project: [Templix](https://www.templix.mkriegel.me/) Splash Templates_
 
 #### _A website that provides splash page templates that will eventually be able to be downloaded and implemented_
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-_[Templix](https://templix.netlify.app/) is a website that provides splash page templates/themes for inspiration or download. Users will be able to view the template, get some information about what the template is built with, file size, instructions on necessary tools to use template, etc. Then users will be able to download the template and implement the template in their own projects. The templates on the website will be completely static, any customization will be done offline by users themselves. Since the download will just be the static template, users will recieve instructions on what technologies are required to be able to use the template. (Currently the download functionality does not execute properly)_
+_[Templix](https://www.templix.mkriegel.me/) is a website that provides splash page templates/themes for inspiration or download. Users will be able to view the template, get some information about what the template is built with, file size, instructions on necessary tools to use template, etc. Then users will be able to download the template and implement the template in their own projects. The templates on the website will be completely static, any customization will be done offline by users themselves. Since the download will just be the static template, users will recieve instructions on what technologies are required to be able to use the template. (Currently the download functionality does not execute properly)_
 
 _To learn more about me, visit my portfolio site [mkriegel](https://mkriegel.me)_
 
@@ -23,8 +23,8 @@ _To learn more about me, visit my portfolio site [mkriegel](https://mkriegel.me)
 
 ### Online
 
-* _The project is deployed on Netlify_
-* _Visit and view [Templix](https://templix.netlify.app/) on Netlify_
+* _The project is deployed on DreamHost_
+* _Visit and view [Templix](https://www.templix.mkriegel.me/) on DreamHost_
 
 ### Local Machine
 
@@ -35,9 +35,7 @@ _To learn more about me, visit my portfolio site [mkriegel](https://mkriegel.me)
 
 ## Known Bugs
 
-* _The woodland template is responsive but looks weird when the window is resized to uncommon screen sizes_
-* _Download button downloads an empty zip_
-* _No authentication is implemented, sign up and login buttons don't work_
+* _Download functionality is not working_
 
 ## License
 
