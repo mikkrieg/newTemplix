@@ -16,7 +16,7 @@ const names = [
   {
     name: 'Woodland',
     id: 'woodland',
-    content: 'This is a layout styled with react-boostrap and css modules that provides a woodland theme.',
+    content: 'This is a woodland layout that I built and styled with react-bootstrap and css modules.',
     title: 'Woodland Layout',
     image: {layout1},
     index: 1   
@@ -24,7 +24,7 @@ const names = [
   {
     name: 'Travel',
     id: 'travel',
-    content: 'This is a layout styled with Material-UI that provides a travel theme.',
+    content: 'This is a travel layout that I built and styled with Material UI',
     title: 'Travel Layout',
     image: {layout2},
     index: 2
@@ -32,7 +32,7 @@ const names = [
   {
     name: 'Sports',
     id: 'sports',
-    content: 'This is a layout styled with Bulma.io that provides a sports theme.',
+    content: 'This is a sports layout that I built and styled with Bulma.io',
     title: 'Sports Layout',
     image: {layout3},
     index: 3
