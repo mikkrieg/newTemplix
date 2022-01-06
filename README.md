@@ -1,4 +1,4 @@
-![Templix Logo](./src/img/logo.png)
+![Templix Logo](./src/img/templix.png)
 ## _Project: [Templix](https://www.templix.mkriegel.me/) Splash Templates_
 
 #### _A website that provides splash page templates that will eventually be able to be downloaded and implemented_
